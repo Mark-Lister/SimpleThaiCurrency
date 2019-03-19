@@ -1,8 +1,8 @@
 %Mark Lister Kasetsart University Digital Image Processing Assignment 2019
 files = dir('*.jpg');
-%for i = 1:length(files)
-    %fileName = files(i).name;
-    fileName = '500 Baht King Side.jpg';
+for i = 1:length(files)
+    fileName = files(i).name;
+    %fileName = '500 Baht King Side.jpg';
     original = imread(fileName);
     disp('Input is: ');
     disp(fileName);
@@ -61,7 +61,7 @@ files = dir('*.jpg');
     imshow(result);
     title(resultText, 'FontSize', 16);
     viscircles(centers, radii,'EdgeColor','r'); % Overlays circles
-    %disp('Press a Key to move on to the next file.');
-    %pause;
-%end
+    disp('Press a Key to move on to the next file.');
+    pause;
+end
 
